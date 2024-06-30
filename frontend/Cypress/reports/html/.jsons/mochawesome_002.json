@@ -1,0 +1,105 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 1,
+    "passes": 1,
+    "pending": 0,
+    "failures": 0,
+    "start": "2024-06-27T18:44:00.605Z",
+    "end": "2024-06-27T18:44:03.963Z",
+    "duration": 3358,
+    "testsRegistered": 1,
+    "passPercent": 100,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "40e13f24-3bef-4f9e-9706-703c31a4b443",
+      "title": "",
+      "fullFile": "cypress\\e2e\\smoke\\login.cy.js",
+      "file": "cypress\\e2e\\smoke\\login.cy.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "37e6e6d3-2383-4935-82dc-e1bf0ed7784c",
+          "title": "Smoke Test - Connexion",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "should display the login form with email and password fields and a login button",
+              "fullTitle": "Smoke Test - Connexion should display the login form with email and password fields and a login button",
+              "timedOut": null,
+              "duration": 1945,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.visit('http://localhost:8080/#/login');\n// Vérifier la présence du champ email\ncy.get('input[data-cy=\"login-input-username\"]').should('be.visible').type('your_email@example.com').then(() => {});\n// Vérifier la présence du champ mot de passe\ncy.get('input[data-cy=\"login-input-password\"]').should('be.visible').type('your_password').then(() => {});\n// Vérifier la présence du bouton de connexion avec le texte \"Se connecter\"\ncy.get('button[data-cy=\"login-submit\"]').should('be.visible').click().then(() => {});",
+              "err": {},
+              "uuid": "43cadcab-2f1d-413d-9d61-701bf3eb8b2c",
+              "parentUUID": "37e6e6d3-2383-4935-82dc-e1bf0ed7784c",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "43cadcab-2f1d-413d-9d61-701bf3eb8b2c"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 1945,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": false,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "7.1.3"
+    },
+    "marge": {
+      "options": {
+        "overwrite": false,
+        "html": false,
+        "json": true,
+        "reportDir": "cypress\\reports\\html\\.jsons"
+      },
+      "version": "6.2.0"
+    }
+  }
+}

@@ -1,0 +1,105 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 1,
+    "passes": 1,
+    "pending": 0,
+    "failures": 0,
+    "start": "2024-06-27T18:43:50.097Z",
+    "end": "2024-06-27T18:43:54.960Z",
+    "duration": 4863,
+    "testsRegistered": 1,
+    "passPercent": 100,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "1f399fee-7d05-4159-b06a-0a50f2f55706",
+      "title": "",
+      "fullFile": "cypress\\e2e\\Fonctionnalité-connexion.cy.js",
+      "file": "cypress\\e2e\\Fonctionnalité-connexion.cy.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "5850818e-5348-4c63-95ce-75249b75b8ed",
+          "title": "Login Form Tests",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "should fill out and submit the login form",
+              "fullTitle": "Login Form Tests should fill out and submit the login form",
+              "timedOut": null,
+              "duration": 2497,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.visit('http://localhost:8080/#/login');\n// Journal de débogage\ncy.log('Visiting the login page');\n// Remplir le champ email\ncy.get('input[data-cy=\"login-input-username\"]').should('be.visible').type('your_email@example.com').then(() => {\n  cy.log('Email input found and filled');\n});\n// Remplir le champ mot de passe\ncy.get('input[data-cy=\"login-input-password\"]').should('be.visible').type('your_password').then(() => {\n  cy.log('Password input found and filled');\n});\n// Cliquer sur le bouton Soumettre\ncy.get('button[data-cy=\"login-submit\"]').should('be.visible').click().then(() => {\n  cy.log('Submit button clicked');\n});",
+              "err": {},
+              "uuid": "ed0be185-52ac-469e-a5b3-b9ca93d6eacf",
+              "parentUUID": "5850818e-5348-4c63-95ce-75249b75b8ed",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "ed0be185-52ac-469e-a5b3-b9ca93d6eacf"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 2497,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": false,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "7.1.3"
+    },
+    "marge": {
+      "options": {
+        "overwrite": false,
+        "html": false,
+        "json": true,
+        "reportDir": "cypress\\reports\\html\\.jsons"
+      },
+      "version": "6.2.0"
+    }
+  }
+}
