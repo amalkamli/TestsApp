@@ -3,7 +3,7 @@
 Cypress.Commands.add('login', (username, password) => {
   cy.request({
     method: 'POST',
-    url: 'http://localhost:8081/login', // Assurez-vous que cette URL est correcte
+    url: 'http://localhost:8081/login', 
     failOnStatusCode: false, // Ajouter cette option pour ne pas échouer en cas de statut non 2xx ou 3xx
     body: {
       username: 'test2@test.fr',
